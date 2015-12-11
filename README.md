@@ -7,6 +7,7 @@
 - Copy `config.default.js` to `config.js`, and fill it out with the appropriate details.
 - Do you actually have nodejs? Ubuntu will lie to you. Be sure: `sudo apt-get --purge remove node` and
 	install nodejs with `sudo apt-get install nodejs`.
+- While you're at it, go get Node Version Manager, too. Fundtroversy will sit there and blink at you if you use any nodejs below v0.10.40, <a href="https://www.digitalocean.com/community/tutorials/how-to-install-node-js-with-nvm-node-version-manager-on-a-vps">so install nvm if you don't have it already and set it to the appropriate version number</a>
 - You may need Node Package Manager if you don't already have it `sudo apt-get install npm`.
 - Install the dependencies in /fundtroversy/ using `npm install`.
 - Install `grunt-cli` globally using `npm install grunt-cli --global`. You may need to `sudo` that.
