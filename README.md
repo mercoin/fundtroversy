@@ -10,6 +10,7 @@
 - You may need Node Package Manager if you don't already have it `sudo apt-get install npm`.
 - Install the dependencies in /fundtroversy/ using `npm install`.
 - Install `grunt-cli` globally using `npm install grunt-cli --global`. You may need to `sudo` that.
+- Because of the retarded way Ubuntu handles node, you'll have to symlink if it gives you this message: `/usr/bin/env: node: No such file or directory`. Command you'll need is: `ln -s /usr/bin/nodejs /usr/bin/node`
 - Build all the client-side JS and CSS files using `grunt`.
 - (Optional) Build the scrypt module by changing into the `scrypt` directory and running `make node`.
 
