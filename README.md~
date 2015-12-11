@@ -53,11 +53,31 @@ Express checks the `NODE_ENV` environment variable to know what features to turn
 ## Changes You Might Care About
 
 
-### Version 1.0 forked
+### Version 2.5.0 forked
 
 - Redis removed, payer.js removed and no longer functional
 - idigdoge page resources gutted
 - Demo page added, notated where to copy in order to paste into existing pages, foregoing hashrate and button at site owner's option
 
+### Version 2.0.2
+
+- Use `PORT` or `NODE_PORT` environment variables.
+- The default config file is now separate.
+- There's options for which scrypt implementation you use.
+
+### Version 2.0.1
+
+- Minor changes for HTTPS.
+- Uses another scrypt implementation on the server for easier install.
+- Checks Dogecoin addresses properly, by decoding and validating the checksum.
+
+### Version 2.0.0
+
+- Brand new look.
+- Using Grunt for minifying and combining front-end files.
+- All the scrypt implementations use the same C++ code base.
+- In Chrome, we now use [PNACL](https://developers.google.com/native-client/dev/) instead of JavaScript.
+- Switched to SASS for CSS.
+- The giant JS file has been split up into manageable chunks.
 =======
 
