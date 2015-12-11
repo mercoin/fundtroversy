@@ -25,6 +25,11 @@ When you put them all together, you get what I use in my start script:
 
 `NODE_PORT=9870 NODE_ENV=production node server.js >> /tmp/server.log &`
 
+- If you don't already have `mod_rewrite` and `mod_proxy` enabled, you'll need to do that.
+- `a2enmod rewrite`
+- `a2enmod proxy`
+- `service apache2 restart`
+
 - The previous implementation had an index page that handled communicating information to the node server. Since this will no longer be the case, changes to .htaccess will be in order:
 
     `RewriteEngine On`
