@@ -26,9 +26,9 @@ When you put them all together, you get what I use in my start script:
 
 - The previous implementation had an index page that handled communicating information to the node server. Since this will no longer be the case, changes to .htaccess will be in order:
 
-    RewriteEngine On
-    RewriteRule ^public/(.*)$ http://localhost:9870/public/$1 [P,L]
-    RewriteRule ^api/(.*)$ http://localhost:9870/api/$1 [P,L]
+    `RewriteEngine On`
+    `RewriteRule ^public/(.*)$ http://localhost:9870/public/$1 [P,L]`
+    `RewriteRule ^api/(.*)$ http://localhost:9870/api/$1 [P,L]`
 
 - Drag /demo to /var/www/html and type in the appropriate address in your browser to check to see if it's running properly. Modify index.html to your liking, or, better yet, take the appropriate code from index.html and input it into your existing page.
 
